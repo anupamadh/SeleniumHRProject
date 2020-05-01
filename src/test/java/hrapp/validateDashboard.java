@@ -13,6 +13,7 @@ public class validateDashboard extends base{
 		dashboardPage dp = new dashboardPage(driver);
 		Assert.assertEquals(dp.getWelcome().getText(), "Welcome Admin");
 		Thread.sleep(3000);
+		dp.getAddEntitlements().click();
 	}
 	
 @AfterTest
