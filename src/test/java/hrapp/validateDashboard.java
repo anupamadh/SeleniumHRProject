@@ -1,7 +1,6 @@
 package hrapp;
 
 import org.testng.Assert;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 
 import pageObjects.dashboardPage;
@@ -16,10 +15,6 @@ public class validateDashboard extends base{
 		dp.getAddEntitlements().click();
 	}
 	
-@AfterTest
-public void tearDown() {
-		driver.close();
-		driver = null;
-	}
+
 	
 }

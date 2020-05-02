@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test thread-count="5" name="Validating Dashboard(failed)">
+  <test thread-count="5" name="Validating Add Entitlement(failed)">
     <classes>
-      <class name="hrapp.validateDashboard">
+      <class name="hrapp.validateAddEntitlement">
         <methods>
           <include name="tearDown"/>
-          <include name="validateAppDashboard"/>
+          <include name="AddEntitlement"/>
         </methods>
-      </class> <!-- hrapp.validateDashboard -->
+      </class> <!-- hrapp.validateAddEntitlement -->
     </classes>
-  </test> <!-- Validating Dashboard(failed) -->
+  </test> <!-- Validating Add Entitlement(failed) -->
 </suite> <!-- Failed suite [Suite] -->
