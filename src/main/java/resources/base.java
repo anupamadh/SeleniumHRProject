@@ -28,6 +28,7 @@ public WebDriver initializeDriver() throws IOException {
 		driver = new FirefoxDriver();
 	}
 	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	driver.manage().timeouts().setScriptTimeout(100,TimeUnit.SECONDS);
 	return driver;
 
 }
