@@ -48,9 +48,6 @@ public class addLeaveEntitlementPage {
 	}
 	
 	public WebElement getTotalText() {
-		//Explicit wait added for total leaves to be displayed
-		w= new WebDriverWait(driver, 5);
-		w.until(ExpectedConditions.visibilityOfElementLocated(total_text));
 		return driver.findElement(total_text);
 	}
 	
@@ -61,9 +58,6 @@ public class addLeaveEntitlementPage {
 	}
 	
 	public WebElement getPopup() {
-		/**Actions actions = new Actions(driver);
-		actions.moveToElement(driver.findElement(popup_confirm)).perform();
-		actions.moveToElement(driver.findElement(popup_confirm)).click();*/
 		return driver.findElement(popup_confirm);
 	}
 }
