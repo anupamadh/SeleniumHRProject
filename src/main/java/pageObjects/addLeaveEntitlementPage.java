@@ -3,6 +3,7 @@ package pageObjects;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -19,6 +20,8 @@ public class addLeaveEntitlementPage {
 	By button_save = By.cssSelector("#btnSave");
 	By total_leave = By.xpath("//td[contains(text(),'20.00')]");
 	By total_text = By.cssSelector("tr[class='total'] td:nth-child(2)");
+	By popup = By.id("employeeEntitlement");
+	By popup_confirm = By.id("dialogUpdateEntitlementConfirmBtn");
 	
 	public addLeaveEntitlementPage(WebDriver driver) {
 		this.driver = driver;
@@ -49,5 +52,18 @@ public class addLeaveEntitlementPage {
 		w= new WebDriverWait(driver, 5);
 		w.until(ExpectedConditions.visibilityOfElementLocated(total_text));
 		return driver.findElement(total_text);
+	}
+	
+	public int getPopupSize() {
+		w= new WebDriverWait(driver, 5);
+		w.until(ExpectedConditions.visibilityOfElementLocated(popup));
+		return driver.findElements(popup).size();
+	}
+	
+	public WebElement getPopup() {
+		/**Actions actions = new Actions(driver);
+		actions.moveToElement(driver.findElement(popup_confirm)).perform();
+		actions.moveToElement(driver.findElement(popup_confirm)).click();*/
+		return driver.findElement(popup_confirm);
 	}
 }

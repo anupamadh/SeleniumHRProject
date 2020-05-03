@@ -29,6 +29,9 @@ public class validateAddEntitlement extends base{
 		leave_period.selectByValue("2020-01-01$$2020-12-31");
 		al.getEntitlement().sendKeys("20");
 		al.getSaveButton().click();
+		if (al.getPopupSize()>0) {
+			al.getPopup().click();
+		}
 		Assert.assertEquals(al.getTotalText().getText(), "Total");
 	}
 	@AfterTest
