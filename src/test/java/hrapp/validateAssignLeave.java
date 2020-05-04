@@ -39,25 +39,21 @@ public class validateAssignLeave extends base{
 		}
 		alp.getFromDate().click();
 		Select fromMonth = new Select(alp.getMonth());
-		fromMonth.selectByValue("5");
+		fromMonth.selectByValue("6");
 		alp.getDate("8").click();
 		alp.getToDate().click();
 		Select toMonth = new Select(alp.getMonth());
-		toMonth.selectByValue("5");
+		toMonth.selectByValue("6");
 		alp.getDate("16").click();
-		try {
-			Thread.sleep(5000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		alp.getAssignButton().click();
-		try {
+		alp.getAssignButton().click(); 
+		alp.getAssignMsg();
+		Assert.assertTrue(alp.getAssignMsg().getText().contains("Successfully Assigned"));
+	/**	try {
 			Thread.sleep(10000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		}
+		}*/
 	}
 	@AfterTest
 	public void tearDown() {

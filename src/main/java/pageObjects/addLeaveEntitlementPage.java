@@ -50,10 +50,16 @@ public class addLeaveEntitlementPage {
 		return driver.findElement(total_text);
 	}
 	
+	@SuppressWarnings("finally")
 	public int getPopupSize() {
+		try {
 		w= new WebDriverWait(driver, 5);
 		w.until(ExpectedConditions.visibilityOfElementLocated(popup));
-		return driver.findElements(popup).size();
+		
+		}
+		finally{
+			return driver.findElements(popup).size();
+		}
 	}
 	
 	public WebElement getPopup() {
