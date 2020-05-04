@@ -8,4 +8,5 @@
 	</test>
 	<test name="Validating Dashboard"><classes><class name="hrapp.validateDashboard"></class></classes></test>
 <test name="Validating Add Entitlement"><classes><class name="hrapp.validateAddEntitlement"></class></classes></test>
+<test name="Validate Assign Leave"><classes><class name="hrapp.validateAssignLeave"></class></classes></test>
 </suite>

@@ -4,7 +4,6 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 
 import pageObjects.addLeaveEntitlementPage;
@@ -34,9 +33,5 @@ public class validateAddEntitlement extends base{
 		}
 		Assert.assertEquals(al.getTotalText().getText(), "Total");
 	}
-	@AfterTest
-	public void tearDown() {
-			driver.close();
-			driver = null;
-		}
+	
 }

@@ -54,7 +54,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Suite">
-                    <span class="test-stats">3 tests</span>
+                    <span class="test-stats">4 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,6 +103,11 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="hrapp.validateAddEntitlement" hash-for-method="AddEntitlement">AddEntitlement</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="hrapp.validateAssignLeave" hash-for-method="assignLeave">assignLeave</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -160,6 +165,21 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
+              <span class="class-name">hrapp.validateAssignLeave</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="assignLeave">
+                  </a> <!-- assignLeave -->
+                  <span class="method-name">assignLeave</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
               <span class="class-name">hrapp.validateDashboard</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -197,6 +217,11 @@
       &lt;class name=&quot;hrapp.validateAddEntitlement&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Validating Add Entitlement --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Validate Assign Leave&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;hrapp.validateAssignLeave&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Validate Assign Leave --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -215,6 +240,9 @@
               </li>
               <li>
                 <span class="test-name">Validating Add Entitlement (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Validate Assign Leave (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -240,24 +268,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'basePageNavigation')
 data.setCell(0, 2, 'hrapp.HomePage')
-data.setCell(0, 3, 6956);
+data.setCell(0, 3, 6894);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'validateAppDashboard')
-data.setCell(1, 2, 'hrapp.validateDashboard')
-data.setCell(1, 3, 5813);
+data.setCell(1, 1, 'assignLeave')
+data.setCell(1, 2, 'hrapp.validateAssignLeave')
+data.setCell(1, 3, 6363);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'AddEntitlement')
-data.setCell(2, 2, 'hrapp.validateAddEntitlement')
-data.setCell(2, 3, 4372);
+data.setCell(2, 1, 'validateAppDashboard')
+data.setCell(2, 2, 'hrapp.validateDashboard')
+data.setCell(2, 3, 6006);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'AddEntitlement')
+data.setCell(3, 2, 'hrapp.validateAddEntitlement')
+data.setCell(3, 3, 4251);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 17 seconds</span>
+              <span class="suite-total-time">Total running time: 23 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -290,25 +322,32 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">basePageNavigation</span>
-                <span class="method-start">1592 ms</span>
+                <span class="method-start">1566 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">hrapp.validateDashboard</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">validateAppDashboard</span>
-                <span class="method-start">8613 ms</span>
+                <span class="method-start">8535 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">hrapp.validateAddEntitlement</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">AddEntitlement</span>
-                <span class="method-start">14439 ms</span>
+                <span class="method-start">14562 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">hrapp.validateAssignLeave</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">assignLeave</span>
+                <span class="method-start">18820 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">18812 ms</span>
+                <span class="method-start">25185 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

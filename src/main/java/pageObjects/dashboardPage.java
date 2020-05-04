@@ -10,6 +10,9 @@ public class dashboardPage {
 public WebDriver driver;
 By welcome = By.cssSelector("#welcome");
 By leave = By.id("menu_leave_viewLeaveModule");
+By dashboard_menu = By.id("menu_dashboard_index");
+By assign_leave = By.xpath("//a[contains(@href,'assignLeave')]/img");
+By leave_list = By.xpath("//a[contains(@href,'LeaveList')]/img");
 
 public dashboardPage(WebDriver driver) {
 	this.driver = driver;
@@ -17,7 +20,6 @@ public dashboardPage(WebDriver driver) {
 
 public WebElement getWelcome() {
 	return driver.findElement(welcome);
-	
 }
 
 public WebElement getAddEntitlements() {
@@ -28,8 +30,15 @@ public WebElement getAddEntitlements() {
 	actions.moveToElement(entitlements).perform();
 	WebElement addEntitlements = driver.findElement(By.xpath("//a[contains(text(),'Add Entitlements')]"));
 	return addEntitlements;
-	
-	
-	
 }
+
+public WebElement getDashboardMenu() {
+	return driver.findElement(dashboard_menu);
+}
+public WebElement getAssignLeave() {
+	return driver.findElement(assign_leave);
+}
+
+
+
 }

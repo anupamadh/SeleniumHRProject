@@ -25,6 +25,4 @@ public void basePageNavigation() throws IOException {
 	
 }
 
-
-
 }
