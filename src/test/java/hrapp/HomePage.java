@@ -27,17 +27,6 @@ public void basePageNavigation(String username, String password) throws IOExcept
 	
 }
 
-/**@DataProvider
-public Object[][] getData() {
-	Object[][] data = new Object[2][2];
-	data[0][0] ="nonrestricteduser@qw.com";
-	data[0][1] ="123456";
-	
-	data[1][0] ="restricteduser@qw.com";
-	data[1][1] ="456788";
-	
-	return data;
-}*/
 @DataProvider(name="test1data")
 public Object[][] getData() {
 	String excelPath = "/Users/anupamadhir/workspace/SeleniumHRProject/excel/data.xlsx";

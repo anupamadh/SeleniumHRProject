@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test thread-count="5" name="Validate Assign Leave(failed)">
+  <test thread-count="5" name="Validating Add Entitlement(failed)">
     <classes>
-      <class name="hrapp.validateAssignLeave">
+      <class name="hrapp.validateAddEntitlement">
         <methods>
-          <include name="tearDown"/>
-          <include name="assignLeave"/>
+          <include name="AddEntitlement" invocation-numbers="1"/>
         </methods>
-      </class> <!-- hrapp.validateAssignLeave -->
+      </class> <!-- hrapp.validateAddEntitlement -->
     </classes>
-  </test> <!-- Validate Assign Leave(failed) -->
+  </test> <!-- Validating Add Entitlement(failed) -->
 </suite> <!-- Failed suite [Suite] -->

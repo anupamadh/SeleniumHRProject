@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">5 methods,   5 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,7 +102,12 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="hrapp.validateAddEntitlement" hash-for-method="AddEntitlement">AddEntitlement</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="hrapp.validateAddEntitlement" hash-for-method="AddEntitlement(Russel, 3, 2020-01-01$$2020-12-31, 30)">AddEntitlement(Russel, 3, 2020-01-01$$2020-12-31, 30)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="hrapp.validateAddEntitlement" hash-for-method="AddEntitlement(Russel, 4, 2020-01-01$$2020-12-31, 20)">AddEntitlement(Russel, 4, 2020-01-01$$2020-12-31, 20)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -186,9 +191,18 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="AddEntitlement">
-                  </a> <!-- AddEntitlement -->
+                  <a name="AddEntitlement(Russel, 3, 2020-01-01$$2020-12-31, 30)">
+                  </a> <!-- AddEntitlement(Russel, 3, 2020-01-01$$2020-12-31, 30) -->
                   <span class="method-name">AddEntitlement</span>
+                  <span class="parameters">(Russel, 3, 2020-01-01$$2020-12-31, 30)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="AddEntitlement(Russel, 4, 2020-01-01$$2020-12-31, 20)">
+                  </a> <!-- AddEntitlement(Russel, 4, 2020-01-01$$2020-12-31, 20) -->
+                  <span class="method-name">AddEntitlement</span>
+                  <span class="parameters">(Russel, 4, 2020-01-01$$2020-12-31, 20)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -269,28 +283,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'assignLeave')
-data.setCell(0, 2, 'hrapp.validateAssignLeave')
-data.setCell(0, 3, 9386);
+data.setCell(0, 1, 'AddEntitlement')
+data.setCell(0, 2, 'hrapp.validateAddEntitlement')
+data.setCell(0, 3, 27199);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'validateAppDashboard')
-data.setCell(1, 2, 'hrapp.validateDashboard')
-data.setCell(1, 3, 7291);
+data.setCell(1, 1, 'AddEntitlement')
+data.setCell(1, 2, 'hrapp.validateAddEntitlement')
+data.setCell(1, 3, 25411);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'basePageNavigation')
-data.setCell(2, 2, 'hrapp.HomePage')
-data.setCell(2, 3, 5329);
+data.setCell(2, 1, 'assignLeave')
+data.setCell(2, 2, 'hrapp.validateAssignLeave')
+data.setCell(2, 3, 9678);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'AddEntitlement')
-data.setCell(3, 2, 'hrapp.validateAddEntitlement')
-data.setCell(3, 3, 4259);
+data.setCell(3, 1, 'basePageNavigation')
+data.setCell(3, 2, 'hrapp.HomePage')
+data.setCell(3, 3, 6901);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'validateAppDashboard')
+data.setCell(4, 2, 'hrapp.validateDashboard')
+data.setCell(4, 3, 3028);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 26 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -323,32 +341,36 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">basePageNavigation(Admin, admin123)</span>
-                <span class="method-start">2099 ms</span>
+                <span class="method-start">2275 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">hrapp.validateDashboard</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">validateAppDashboard</span>
-                <span class="method-start">7500 ms</span>
+                <span class="method-start">9238 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">hrapp.validateAddEntitlement</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">AddEntitlement</span>
-                <span class="method-start">14820 ms</span>
+                <span class="method-name">AddEntitlement(Russel, 4, 2020-01-01$$2020-12-31, 20)</span>
+                <span class="method-start">12309 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">AddEntitlement(Russel, 3, 2020-01-01$$2020-12-31, 30)</span>
+                <span class="method-start">39510 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">hrapp.validateAssignLeave</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">assignLeave</span>
-                <span class="method-start">19087 ms</span>
+                <span class="method-start">64934 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">28474 ms</span>
+                <span class="method-start">74612 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
