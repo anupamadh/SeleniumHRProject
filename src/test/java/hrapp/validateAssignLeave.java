@@ -48,12 +48,6 @@ public class validateAssignLeave extends base{
 		alp.getAssignButton().click(); 
 		alp.getAssignMsg();
 		Assert.assertTrue(alp.getAssignMsg().getText().contains("Successfully Assigned"));
-	/**	try {
-			Thread.sleep(10000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}*/
 	}
 	@AfterTest
 	public void tearDown() {

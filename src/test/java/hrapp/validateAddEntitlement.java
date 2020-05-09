@@ -1,5 +1,7 @@
 package hrapp;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -13,6 +15,7 @@ import resources.base;
 import utils.ExcelUtils;
 @Test
 public class validateAddEntitlement extends base{
+	private static Logger log =LogManager.getLogger(validateDashboard.class.getName());
 	WebDriverWait wait; 
 	@Test(dataProvider = "addleave")
 	public void AddEntitlement(String employee, String leaveType, String leavePeriod, String entitlement) {
@@ -30,6 +33,7 @@ public class validateAddEntitlement extends base{
 		al.getEmployee().sendKeys(Keys.ENTER);
 		Select leave_type = new Select(al.getLeaveType());
 		leave_type.selectByValue(leaveType);
+		log.debug("Selecting leave period");
 		Select leave_period = new Select(al.getLeavePeriod());
 		leave_period.selectByValue(leavePeriod);
 		al.getEntitlement().sendKeys(entitlement);

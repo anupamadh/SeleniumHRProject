@@ -2,6 +2,8 @@ package pageObjects;
 
 import java.util.List;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -10,6 +12,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class assignLeavePage {
 	public WebDriver driver;
+	private static Logger log =LogManager.getLogger(assignLeavePage.class.getName());
 	private static WebDriverWait w= null;
 	By employee_name = By.id("assignleave_txtEmployee_empName");
 	By leave_type = By.id("assignleave_txtLeaveType");
@@ -51,6 +54,7 @@ public class assignLeavePage {
 				return date;
 			}
 		}
+		log.error("Cannot select date"); 
 		return null;
 	}
 	
