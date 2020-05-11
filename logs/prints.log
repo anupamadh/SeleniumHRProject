@@ -1,2 +1,3 @@
-12:29:51.319 [main] DEBUG hrapp.validateDashboard - Selecting leave period
-12:30:26.435 [main] DEBUG hrapp.validateDashboard - Selecting leave period
+16:32:38.558 [main] INFO  hrapp.validateDashboard - Landed on Dashboard Page
+16:32:47.030 [main] DEBUG hrapp.validateDashboard - Selecting leave period
+16:33:12.796 [main] DEBUG hrapp.validateDashboard - Selecting leave period

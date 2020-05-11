@@ -2,4 +2,3 @@ pageObjects/dashboardPage.class
 resources/base.class
 pageObjects/LoginPage.class
 pageObjects/assignLeavePage.class
-pageObjects/addLeaveEntitlementPage.class
