@@ -11,16 +11,16 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class assignLeavePage {
-	public WebDriver driver;
+	private WebDriver driver;
 	private static Logger log =LogManager.getLogger(assignLeavePage.class.getName());
 	private static WebDriverWait w= null;
-	By employee_name = By.id("assignleave_txtEmployee_empName");
-	By leave_type = By.id("assignleave_txtLeaveType");
-	By from_date = By.cssSelector("#assignleave_txtFromDate+img");
-	By month = By.cssSelector("select[class='ui-datepicker-month'] ");
-	By date = By.cssSelector("td[data-handler='selectDay'] .ui-state-default ");
-	By to_date = By.cssSelector("#assignleave_txtToDate+img");
-	By assign_msg = By.cssSelector(".message.success.fadable");
+	private By employee_name = By.id("assignleave_txtEmployee_empName");
+	private By leave_type = By.id("assignleave_txtLeaveType");
+	private By from_date = By.cssSelector("#assignleave_txtFromDate+img");
+	private By month = By.cssSelector("select[class='ui-datepicker-month'] ");
+	private By date = By.cssSelector("td[data-handler='selectDay'] .ui-state-default ");
+	private By to_date = By.cssSelector("#assignleave_txtToDate+img");
+	private By assign_msg = By.cssSelector(".message.success.fadable");
 	
 	By assign_button = By.id("assignBtn");
 	public assignLeavePage(WebDriver driver) {

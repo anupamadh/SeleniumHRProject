@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="91278" started-at="2020-05-11T12:29:27 SGT" finished-at="2020-05-11T12:30:58 SGT">
+    <groups>
+    </groups>
+    <test name="Validating User Login" duration-ms="10824" started-at="2020-05-11T12:29:27 SGT" finished-at="2020-05-11T12:29:38 SGT">
+      <class name="hrapp.HomePage">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:hrapp.HomePage@6913c1fb]" name="initialize" is-config="true" duration-ms="1980" started-at="2020-05-11T12:29:27 SGT" finished-at="2020-05-11T12:29:29 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="basePageNavigation()[pri:0, instance:hrapp.HomePage@6913c1fb]" name="basePageNavigation" duration-ms="8818" started-at="2020-05-11T12:29:29 SGT" finished-at="2020-05-11T12:29:38 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basePageNavigation -->
+      </class> <!-- hrapp.HomePage -->
+    </test> <!-- Validating User Login -->
+    <test name="Validating Dashboard" duration-ms="3117" started-at="2020-05-11T12:29:38 SGT" finished-at="2020-05-11T12:29:41 SGT">
+      <class name="hrapp.validateDashboard">
+        <test-method status="PASS" signature="validateAppDashboard()[pri:0, instance:hrapp.validateDashboard@7494f96a]" name="validateAppDashboard" duration-ms="3115" started-at="2020-05-11T12:29:38 SGT" finished-at="2020-05-11T12:29:41 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateAppDashboard -->
+      </class> <!-- hrapp.validateDashboard -->
+    </test> <!-- Validating Dashboard -->
+    <test name="Validating Add Entitlement" duration-ms="66665" started-at="2020-05-11T12:29:41 SGT" finished-at="2020-05-11T12:30:48 SGT">
+      <class name="hrapp.validateAddEntitlement">
+        <test-method status="PASS" signature="AddEntitlement(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:hrapp.validateAddEntitlement@4c309d4d]" name="AddEntitlement" duration-ms="37655" started-at="2020-05-11T12:29:41 SGT" data-provider="addleave" finished-at="2020-05-11T12:30:19 SGT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Russel]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2020-01-01$$2020-12-31]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[20]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddEntitlement -->
+        <test-method status="PASS" signature="AddEntitlement(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:hrapp.validateAddEntitlement@4c309d4d]" name="AddEntitlement" duration-ms="28492" started-at="2020-05-11T12:30:19 SGT" data-provider="addleave" finished-at="2020-05-11T12:30:48 SGT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Russel]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2020-01-01$$2020-12-31]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[30]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddEntitlement -->
+      </class> <!-- hrapp.validateAddEntitlement -->
+    </test> <!-- Validating Add Entitlement -->
+    <test name="Validate Assign Leave" duration-ms="10621" started-at="2020-05-11T12:30:48 SGT" finished-at="2020-05-11T12:30:58 SGT">
+      <class name="hrapp.validateAssignLeave">
+        <test-method status="PASS" signature="assignLeave()[pri:0, instance:hrapp.validateAssignLeave@58ea606c]" name="assignLeave" duration-ms="10530" started-at="2020-05-11T12:30:48 SGT" finished-at="2020-05-11T12:30:58 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- assignLeave -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:hrapp.validateAssignLeave@58ea606c]" name="tearDown" is-config="true" duration-ms="89" started-at="2020-05-11T12:30:58 SGT" finished-at="2020-05-11T12:30:58 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- hrapp.validateAssignLeave -->
+    </test> <!-- Validate Assign Leave -->
+  </suite> <!-- Suite -->
+</testng-results>

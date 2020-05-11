@@ -7,13 +7,11 @@ import org.openqa.selenium.interactions.Actions;
 
 public class dashboardPage {
 	
-public WebDriver driver;
-By welcome = By.cssSelector("#welcome");
-By leave = By.id("menu_leave_viewLeaveModule");
-By dashboard_menu = By.id("menu_dashboard_index");
-By assign_leave = By.xpath("//a[contains(@href,'assignLeave')]/img");
-By leave_list = By.xpath("//a[contains(@href,'LeaveList')]/img");
-
+private WebDriver driver;
+private By welcome = By.cssSelector("#welcome");
+private By leave = By.id("menu_leave_viewLeaveModule");
+private By dashboard_menu = By.id("menu_dashboard_index");
+private By assign_leave = By.xpath("//a[contains(@href,'assignLeave')]/img");
 public dashboardPage(WebDriver driver) {
 	this.driver = driver;
 }

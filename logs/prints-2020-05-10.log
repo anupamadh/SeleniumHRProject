@@ -1,0 +1,7 @@
+12:27:09.748 [main] INFO  hrapp.validateDashboard - Landed on Dashboard Page
+12:27:18.334 [main] DEBUG hrapp.validateDashboard - Selecting leave period
+12:27:43.946 [main] DEBUG hrapp.validateDashboard - Selecting leave period
+12:33:56.364 [main] ERROR resources.base - Cannot identify the browser
+12:34:57.994 [main] INFO  hrapp.validateDashboard - Landed on Dashboard Page
+12:35:06.315 [main] DEBUG hrapp.validateDashboard - Selecting leave period
+12:35:32.357 [main] DEBUG hrapp.validateDashboard - Selecting leave period

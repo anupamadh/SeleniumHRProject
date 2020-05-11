@@ -7,20 +7,17 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class addLeaveEntitlementPage {
-	public WebDriver driver;
+	private WebDriver driver;
 	
-	Boolean checkText = false;
 	private static WebDriverWait w= null;
-	By employee_hint = By.cssSelector(".ac_input inputFormatHint");
-	By employee = By.cssSelector("#entitlements_employee_empName");
-	By leave_type = By.cssSelector("#entitlements_leave_type");
-	By leave_period = By.cssSelector("#period");
-	By entitlement = By.cssSelector("#entitlements_entitlement");
-	By button_save = By.cssSelector("#btnSave");
-	By total_leave = By.xpath("//td[contains(text(),'20.00')]");
-	By total_text = By.cssSelector("tr[class='total'] td:nth-child(2)");
-	By popup = By.id("employeeEntitlement");
-	By popup_confirm = By.id("dialogUpdateEntitlementConfirmBtn");
+	private By employee = By.cssSelector("#entitlements_employee_empName");
+	private By leave_type = By.cssSelector("#entitlements_leave_type");
+	private By leave_period = By.cssSelector("#period");
+	private By entitlement = By.cssSelector("#entitlements_entitlement");
+	private By button_save = By.cssSelector("#btnSave");
+	private By total_text = By.cssSelector("tr[class='total'] td:nth-child(2)");
+	private By popup = By.id("employeeEntitlement");
+	private By popup_confirm = By.id("dialogUpdateEntitlementConfirmBtn");
 	
 	public addLeaveEntitlementPage(WebDriver driver) {
 		this.driver = driver;

@@ -5,11 +5,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class LoginPage {
-public WebDriver driver = null;
+private WebDriver driver = null;
 
-By username = By.id("txtUsername");
-By password = By.cssSelector("input[name='txtPassword']");
-By login_button = By.xpath("//input[@name='Submit']");
+private By username = By.id("txtUsername");
+private By password = By.cssSelector("input[name='txtPassword']");
+private By login_button = By.xpath("//input[@name='Submit']");
 
 public LoginPage(WebDriver driver) {
 	this.driver = driver;

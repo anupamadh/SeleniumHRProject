@@ -19,9 +19,10 @@ public Properties prop = null;
 private static Logger log =LogManager.getLogger(base.class.getName());
 public WebDriver initializeDriver() throws IOException {
 	prop = new Properties();
-	FileInputStream fis = new FileInputStream("/Users/anupamadhir/workspace/SeleniumHRProject/src/main/java/resources/data.properties");
+	FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"/src/main/java/resources/data.properties");
 	prop.load(fis);
-	String browserName = prop.getProperty("browser");
+//	String browserName = prop.getProperty("browser");
+	String browserName = System.getProperty("browser");
 	if (browserName.equals("chrome")) {
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
